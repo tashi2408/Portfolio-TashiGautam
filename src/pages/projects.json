@@ -1,0 +1,56 @@
+[
+  {
+    "id": "01",
+    "title": "Meet Me",
+    "type": "Web Development",
+    "techStack": ["HTML", "SCSS"],
+    "info": "Lorem ipsum dolor  rerum aut nihil iure ut laborum nulla uts ad dolorem earum vel voluptas laborum."
+  },
+
+  {
+    "id": "02",
+    "title": "Brainastra",
+    "type": "Web Development",
+    "techStack": ["ReactJS", "Redux"],
+    "info": " iure ut laborum nulla ut necessitatibus voluptas ad dolorem earum vel voluptas laborum."
+  },
+
+  {
+    "id": " 03",
+    "title": "Youth India Foundation Website",
+    "type": "Web Development",
+    "techStack": ["ReactJS"],
+    "info": "consectetur internos eos voluptas rerum aut nihil iure ut laborum nulla ut necessitatibus voluptas ad dolorem earum vel voluptas laborum."
+  },
+
+  {
+    "id": "04",
+    "title": "Music Generation",
+    "type": "Deep Learning",
+    "techStack": ["CNN", "Python"],
+    "info": "Lorem ipsumnihil iure ut laborum nulla ut necessitatibus voluptas ad dolorem earum vel voluptas laborum."
+  },
+
+  {
+    "id": "05",
+    "title": "Twitter Gender Classification",
+    "type": "Machine Learning",
+    "techStack": ["Python"],
+    "info": "Lorem ipsurerum qui enim laboriocessitatibus voluptas ad dolorem earum vel voluptas laborum."
+  },
+
+  {
+    "id": "06",
+    "title": "Rob-Oto",
+    "type": "Machine Learning",
+    "techStack": ["Python"],
+    "info": "Lorem ipsum dolor ut laborum nulla ut necessitatibus voluptas ad dolorem earum vel voluptas laborum."
+  },
+  {
+    "id": "07",
+    "title": "Stract Club Portfolio",
+    "type": "Web Development",
+    "techStack": ["ReactJS"],
+    "info": "Lorem ipsum doloborum nulla ut necessitatibus voluptas ad dolorem earum vel voluptas laborum."
+  }
+]
