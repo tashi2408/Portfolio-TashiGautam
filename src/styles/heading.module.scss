@@ -1,0 +1,31 @@
+.bold {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+
+  color: rgba(#00c9b7, 0.3);
+
+  font-size: 8rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.heading {
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+  display: block;
+}
+
+.cursive {
+  position: absolute;
+  font-family: "Satisfy", cursive;
+  text-transform: capitalize;
+  font-weight: 100;
+  font-style: italic;
+  top: 0rem;
+  left: 4rem;
+  color: var(--quaternary);
+  font-size: 5rem;
+  //   letter-spacing: 2rem;
+  font-stretch: ultra-expanded;
+  word-spacing: 1rem;
+}
