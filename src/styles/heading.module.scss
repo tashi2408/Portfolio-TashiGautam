@@ -2,16 +2,19 @@
   position: relative;
   font-family: "Montserrat", sans-serif;
 
-  color: rgba(#00c9b7, 0.3);
+  color: rgba($color: #00c9b7, $alpha: 0.3);
 
-  font-size: 8rem;
+  font-size: 10rem;
   text-transform: uppercase;
-  font-weight: 600;
+
+  font-weight: 800;
 }
 
 .heading {
-  margin-bottom: 2rem;
-  margin-left: 2rem;
+  max-width: 120rem;
+  margin: 0rem auto 4rem auto;
+  text-align: center;
+
   display: block;
 }
 
@@ -21,8 +24,8 @@
   text-transform: capitalize;
   font-weight: 100;
   font-style: italic;
-  top: 0rem;
-  left: 4rem;
+  top: 2.5rem;
+  left: 40%;
   color: var(--quaternary);
   font-size: 5rem;
   //   letter-spacing: 2rem;
