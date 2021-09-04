@@ -10,6 +10,8 @@
   --secondary: #0a0a0a;
   --tertiary: #d16ba5;
   --quaternary: #f5f5f5;
+  --base-duration: 600ms;
+  --base-ease: cubic-bezier(0.25, 0.46, 0.45, 0.84);
 }
 
 $text: black;
@@ -27,10 +29,13 @@ $text: black;
 html,
 body {
   font-size: 62.5%;
-  color: white;
+  color: var(--quaternary);
   // background: radial-gradient(ellipse at top, #1b2735 0%, #090a0f 100%);
   background-color: var(--secondary);
   background-repeat: no-repeat;
+  @media screen and (min-width: 900px) {
+    font-size: 56.25%;
+  }
 }
 
 body {
@@ -54,18 +59,53 @@ body {
       background: linear-gradient(transparent, var(--tertiary));
     }
   }
-}
 
-p {
-  margin: 1.6rem auto;
-  line-height: 2rem;
+  ::-moz-selection {
+    /* Code for Firefox */
+    color: var(--quaternary);
+    background: var(--tertiary);
+  }
+
+  ::selection {
+    color: var(--quaternary);
+    background: var(--tertiary);
+  }
 }
 
 footer {
+  padding: 4rem 0;
+  color: var(--quaternary);
+  background: rgb(209, 107, 165);
+  background: linear-gradient(
+    180deg,
+    rgba(209, 107, 165, 0.8438725832129726) 0%,
+    rgba(0, 0, 0, 1) 16%,
+    rgba(10, 10, 10, 1) 98%
+  );
+  & ul {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & li {
+      list-style: none;
+
+      cursor: pointer;
+      margin-right: 1rem;
+
+      & a {
+        color: var(--quaternary);
+        transition: all 0.2s;
+        &:hover {
+          color: var(--primary);
+        }
+      }
+    }
+  }
   & p {
     text-align: center;
-    color: #bbb;
-    margin: 4rem auto;
+    color: var(--quaternary);
   }
 }
 
@@ -86,6 +126,10 @@ footer {
   margin: 0;
   cursor: pointer;
   z-index: 10;
+
+  @media screen and (max-width: 650px) {
+    top: 50px;
+  }
 }
 .menu-icon:checked + label:before,
 .menu-icon:not(:checked) + label:before {
@@ -159,6 +203,11 @@ footer {
     transform 250ms 1100ms ease,
     width 650ms 400ms cubic-bezier(0.23, 1, 0.32, 1),
     height 650ms 400ms cubic-bezier(0.23, 1, 0.32, 1);
+
+  @media screen and (max-width: 650px) {
+    width: 50px;
+    height: 50px;
+  }
 }
 @keyframes border-transform {
   0%,
@@ -293,6 +342,10 @@ footer {
   .menu-icon:checked + label,
   .menu-icon:not(:checked) + label {
     right: 55px;
+
+    @media screen and (max-width: 650px) {
+      right: 40px;
+    }
   }
 
   .nav {

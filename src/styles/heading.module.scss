@@ -8,11 +8,24 @@
   text-transform: uppercase;
 
   font-weight: 800;
+  @media screen and (max-width: 850px) {
+    font-size: 8rem;
+  }
+
+  @media screen and (max-width: 650px) {
+    font-size: 6rem;
+    height: 100%;
+  }
+
+  @media screen and (max-width: 450px) {
+    font-size: 4.5rem;
+    height: 100%;
+  }
 }
 
 .heading {
   max-width: 120rem;
-  margin: 0rem auto 4rem auto;
+  margin: 2rem auto 3rem auto;
   text-align: center;
 
   display: block;
@@ -31,4 +44,11 @@
   //   letter-spacing: 2rem;
   font-stretch: ultra-expanded;
   word-spacing: 1rem;
+  @media screen and (max-width: 850px) {
+    font-size: 3rem;
+  }
+
+  @media screen and (max-width: 650px) {
+    font-size: 2rem;
+  }
 }
