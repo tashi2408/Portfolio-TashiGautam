@@ -1,0 +1,103 @@
+.social_btns .btn,
+.social_btns .btn:before,
+.social_btns .btn .fa {
+  transition: all 0.35s;
+  transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+.social_btns {
+  font-size: 0;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  z-index: 999;
+  top: 50%;
+  left: 2rem;
+  transform: translate(0%, -50%);
+  @media screen and (max-width: 650px) {
+    left: 0;
+  }
+
+  .btn {
+    align-items: center;
+    background-color: var(--quaternary);
+    display: block;
+
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    margin: 1rem 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 28%;
+    box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.1);
+    opacity: 0.99;
+
+    @media screen and (max-width: 650px) {
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      margin: 0.5rem 0;
+    }
+    &:before {
+      top: 90%;
+      left: -110%;
+      content: " ";
+      width: 120%;
+      height: 120%;
+      position: absolute;
+      transform: rotate(45deg);
+    }
+    .fa {
+      transform: scale(0.8);
+      font-size: 30px;
+      vertical-align: middle;
+
+      @media screen and (max-width: 650px) {
+        font-size: 25px;
+      }
+    }
+    &.github {
+      &:before {
+        background-color: #6e5494;
+      }
+      .fa {
+        color: #6e5494;
+      }
+    }
+    &.instagram {
+      &:before {
+        background-color: #d6249f;
+      }
+      .fa {
+        color: #d6249f;
+      }
+    }
+    &.google {
+      &:before {
+        background-color: #dc4a38;
+      }
+      .fa {
+        color: #dc4a38;
+      }
+    }
+    &.linkedin {
+      &:before {
+        background-color: #0e76a8;
+      }
+      .fa {
+        color: #0e76a8;
+      }
+    }
+  }
+}
+.social_btns .btn:focus:before,
+.social_btns .btn:hover:before {
+  top: -10%;
+  left: -10%;
+}
+.social_btns .btn:focus .fa,
+.social_btns .btn:hover .fa {
+  color: #fff;
+  transform: scale(0.9);
+}

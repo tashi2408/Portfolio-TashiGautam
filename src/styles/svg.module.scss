@@ -1,0 +1,104 @@
+@mixin width-height() {
+  @media only screen and (max-width: 400px) {
+    height: 50px;
+    width: 50px;
+  }
+  @media only screen and (max-width: 900px) {
+    height: 80px;
+    width: 80px;
+  }
+  @media only screen and (max-width: 1200px) {
+    height: 150px;
+    width: 150px;
+  }
+  height: 250px;
+  width: 250px;
+}
+
+.svg_file {
+  .wrap_2 {
+    margin: 0 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 35%;
+
+    .span_p {
+      cursor: pointer;
+      border: 1.5px solid var(--tertiary);
+      @include width-height;
+      position: absolute;
+      opacity: 0.6;
+      border-radius: 100%;
+      transition: all;
+    }
+    .span_g {
+      cursor: pointer;
+      border: 1.5px solid var(--primary);
+      @include width-height;
+      position: absolute;
+      opacity: 0.6;
+      border-radius: 100%;
+      transition: all;
+    }
+  }
+
+  .wrap_2 {
+    .span_1 {
+      transition: all 1200ms;
+
+      border-radius: 40% 42% 45% 55%;
+      animation: gogo 5200ms infinite linear;
+    }
+    .span_2 {
+      transition: all 1200ms;
+
+      border-radius: 55% 41% 65% 43%;
+      animation: gogo-2 5500ms infinite linear;
+    }
+    .span_3 {
+      transition: all 1200ms;
+
+      border-radius: 52% 72% 45% 61%;
+      animation: gogo 3400ms infinite linear;
+    }
+    .span_4 {
+      transition: all 1200ms;
+
+      border-radius: 58% 56% 72% 58%;
+      animation: gogo-2 6000ms infinite linear;
+    }
+  }
+  .go {
+    transition: all 1200ms;
+  }
+}
+
+@keyframes gogo {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes gogo-2 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-720deg);
+  }
+}
+@keyframes go-heart {
+  from {
+    transform: scale(1.3) rotate(0deg);
+  }
+  to {
+    transform: scale(1.3) rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 991px) {
+}
