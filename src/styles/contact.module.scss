@@ -1,0 +1,125 @@
+.contactsection {
+  max-width: 80rem;
+  margin: 0 auto;
+
+  & form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  & button {
+    background-color: transparent;
+    border: 2px solid var(--quaternary);
+    color: var(--quaternary);
+    padding: 1rem 2rem;
+    transition: all 0.2s;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    border-radius: 5px;
+
+    &:hover {
+      background: -webkit-linear-gradient(var(--tertiary), var(--primary));
+    }
+  }
+}
+
+.contactdetails {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem auto;
+  font-size: 2rem;
+  @media screen and (max-width: 650px) {
+    flex-direction: column;
+  }
+
+  & div {
+    display: flex;
+    transition: all 0.2s;
+    justify-content: center;
+    align-items: center;
+    &:not(:last-child) {
+      margin-right: 3rem;
+      @media screen and (max-width: 650px) {
+        margin-bottom: 2rem;
+        margin-right: 0;
+      }
+    }
+
+    & svg {
+      fill: var(--quaternary);
+      margin-right: 1rem;
+    }
+
+    & p {
+      background: -webkit-linear-gradient(var(--tertiary), var(--primary));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}
+
+.form__group {
+  position: relative;
+  padding: 1.5rem 0 0;
+  margin: 2rem 0;
+  width: 70%;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid var(--quaternary);
+  outline: 0;
+  font-size: 1.5rem;
+  color: var(--quaternary);
+  padding: 0.7rem 0;
+  background: transparent;
+  transition: border-color 0.2s;
+
+  &::placeholder {
+    color: transparent;
+  }
+
+  &:placeholder-shown ~ .form__label {
+    font-size: 1.5rem;
+    cursor: text;
+    top: 20px;
+  }
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1.4rem;
+  color: var(--quaternary);
+}
+
+.form__field:focus {
+  ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1.4rem;
+    color: var(--tertiary);
+    font-weight: 700;
+  }
+  padding-bottom: 6px;
+  font-weight: 400;
+  border-width: 3px;
+  border-image: linear-gradient(to right, var(--tertiary), var(--primary));
+  border-image-slice: 1;
+}
+/* reset input */
+.form__field {
+  &:required,
+  &:invalid {
+    box-shadow: none;
+  }
+}
