@@ -4,7 +4,8 @@
     "title": "Meet Me",
     "type": "Web Development",
     "techStack": ["HTML", "SCSS"],
-    "info": "Lorem ipsum dolor  rerum aut nihil iure ut laborum nulla uts ad dolorem earum vel voluptas laborum."
+    "info": "Lorem ipsum dolor  rerum aut nihil iure ut laborum nulla uts ad dolorem earum vel voluptas laborum.",
+    "img": "https://unsplash.it/450/800?image=508"
   },
 
   {
@@ -12,15 +13,17 @@
     "title": "Brainastra",
     "type": "Web Development",
     "techStack": ["ReactJS", "Redux"],
-    "info": " iure ut laborum nulla ut necessitatibus voluptas ad dolorem earum vel voluptas laborum."
+    "info": " iure ut laborum nulla ut necessitatibus voluptas ad dolorem earum vel voluptas laborum.",
+    "img": "https://unsplash.it/450/800?image=817"
   },
 
   {
     "id": " 03",
-    "title": "Youth India Foundation Website",
+    "title": "Your Friend Website",
     "type": "Web Development",
     "techStack": ["ReactJS"],
-    "info": "consectetur internos eos voluptas rerum aut nihil iure ut laborum nulla ut necessitatibus voluptas ad dolorem earum vel voluptas laborum."
+    "info": "consectetur internos eos voluptas rerum aut nihil iure ut laborum nulla ut necessitatibus voluptas ad dolorem earum vel voluptas laborum.",
+    "img": "https://unsplash.it/450/800?image=948"
   },
 
   {
@@ -28,7 +31,8 @@
     "title": "Music Generation",
     "type": "Deep Learning",
     "techStack": ["CNN", "Python"],
-    "info": "Lorem ipsumnihil iure ut laborum nulla ut necessitatibus voluptas ad dolorem earum vel voluptas laborum."
+    "info": "Lorem ipsumnihil iure ut laborum nulla ut necessitatibus voluptas ad dolorem earum vel voluptas laborum.",
+    "img": "https://unsplash.it/450/800?image=743"
   },
 
   {
@@ -36,7 +40,8 @@
     "title": "Twitter Gender Classification",
     "type": "Machine Learning",
     "techStack": ["Python"],
-    "info": "Lorem ipsurerum qui enim laboriocessitatibus voluptas ad dolorem earum vel voluptas laborum."
+    "info": "Lorem ipsurerum qui enim laboriocessitatibus voluptas ad dolorem earum vel voluptas laborum.",
+    "img": "https://unsplash.it/450/800?image=452"
   },
 
   {
@@ -44,13 +49,15 @@
     "title": "Rob-Oto",
     "type": "Machine Learning",
     "techStack": ["Python"],
-    "info": "Lorem ipsum dolor ut laborum nulla ut necessitatibus voluptas ad dolorem earum vel voluptas laborum."
+    "info": "Lorem ipsum dolor ut laborum nulla ut necessitatibus voluptas ad dolorem earum vel voluptas laborum.",
+    "img": "https://unsplash.it/450/800?image=737"
   },
   {
     "id": "07",
     "title": "Stract Club Portfolio",
     "type": "Web Development",
     "techStack": ["ReactJS"],
-    "info": "Lorem ipsum doloborum nulla ut necessitatibus voluptas ad dolorem earum vel voluptas laborum."
+    "info": "Lorem ipsum doloborum nulla ut necessitatibus voluptas ad dolorem earum vel voluptas laborum.",
+    "img": "https://unsplash.it/450/800?image=807"
   }
 ]
