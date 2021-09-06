@@ -1,6 +1,7 @@
 [
   {
-    "id": "01",
+    "id": 0,
+    "number": "01",
     "title": "Meet Me",
     "type": "Web Development",
     "techStack": ["HTML", "SCSS"],
@@ -9,7 +10,8 @@
   },
 
   {
-    "id": "02",
+    "id": 1,
+    "number": "02",
     "title": "Brainastra",
     "type": "Web Development",
     "techStack": ["ReactJS", "Redux"],
@@ -18,7 +20,8 @@
   },
 
   {
-    "id": " 03",
+    "id": 2,
+    "number": "03",
     "title": "Your Friend Website",
     "type": "Web Development",
     "techStack": ["ReactJS"],
@@ -27,7 +30,8 @@
   },
 
   {
-    "id": "04",
+    "id": 3,
+    "number": "04",
     "title": "Music Generation",
     "type": "Deep Learning",
     "techStack": ["CNN", "Python"],
@@ -36,7 +40,8 @@
   },
 
   {
-    "id": "05",
+    "id": 4,
+    "number": "05",
     "title": "Twitter Gender Classification",
     "type": "Machine Learning",
     "techStack": ["Python"],
@@ -45,7 +50,8 @@
   },
 
   {
-    "id": "06",
+    "id": 5,
+    "number": "06",
     "title": "Rob-Oto",
     "type": "Machine Learning",
     "techStack": ["Python"],
@@ -53,7 +59,8 @@
     "img": "https://unsplash.it/450/800?image=737"
   },
   {
-    "id": "07",
+    "id": 6,
+    "number": "07",
     "title": "Stract Club Portfolio",
     "type": "Web Development",
     "techStack": ["ReactJS"],
