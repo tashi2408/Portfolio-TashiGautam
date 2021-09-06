@@ -2,8 +2,11 @@ import React from "react"
 import "../styles/project.scss"
 import { IoIosArrowDroprightCircle } from "react-icons/io"
 
+import Projects from "../pages/projects.json"
+
 export default function ProjectSlide() {
-  const slideData = [
+  const slideData = Projects
+  const slideextradata = [
     {
       index: 0,
       headline: "New Fashion Apparel",
@@ -65,7 +68,7 @@ export default function ProjectSlide() {
     }
 
     handleSlideClick(event) {
-      this.props.handleSlideClick(this.props.slide.index)
+      this.props.handleSlideClick(this.props.slide.id)
     }
 
     imageLoaded(event) {
@@ -73,13 +76,13 @@ export default function ProjectSlide() {
     }
 
     render() {
-      const { src, button, headline, index } = this.props.slide
+      const { img, title, id } = this.props.slide
       const current = this.props.current
       let classNames = "slide"
 
-      if (current === index) classNames += " slide--current"
-      else if (current - 1 === index) classNames += " slide--previous"
-      else if (current + 1 === index) classNames += " slide--next"
+      if (current === id) classNames += " slide--current"
+      else if (current - 1 === id) classNames += " slide--previous"
+      else if (current + 1 === id) classNames += " slide--next"
 
       return (
         <li
@@ -92,14 +95,14 @@ export default function ProjectSlide() {
           <div className="slide__image-wrapper">
             <img
               className="slide__image"
-              alt={headline}
-              src={src}
+              alt={title}
+              src={img}
               onLoad={this.imageLoaded}
             />
           </div>
 
           <article className="slide__content">
-            <h2 className="slide__headline">{headline}</h2>
+            <h2 className="slide__headline">{title}</h2>
             <button className="slide__action btn">View More</button>
           </article>
         </li>
@@ -153,10 +156,10 @@ export default function ProjectSlide() {
       })
     }
 
-    handleSlideClick(index) {
-      if (this.state.current !== index) {
+    handleSlideClick(id) {
+      if (this.state.current !== id) {
         this.setState({
-          current: index,
+          current: id,
         })
       }
     }
@@ -181,7 +184,7 @@ export default function ProjectSlide() {
             {slides.map(slide => {
               return (
                 <Slide
-                  key={slide.index}
+                  key={slide.id}
                   slide={slide}
                   current={current}
                   handleSlideClick={this.handleSlideClick}
@@ -209,7 +212,7 @@ export default function ProjectSlide() {
   }
 
   return (
-    <div>
+    <div data-aos="fade-left">
       <Slider
         heading="Example Slider"
         slides={slideData}

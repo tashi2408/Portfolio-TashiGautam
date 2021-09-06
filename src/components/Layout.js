@@ -1,23 +1,23 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import Navbar from "./Navbar"
 import "../styles/global.scss"
-import { lightTheme, darkTheme } from "./Theme"
+
 import SocialIcons from "./SocialIcons"
 
+import AOS from "aos"
+import "aos/dist/aos.css"
+
 export default function Layout({ children }) {
-  const [theme, setTheme] = useState("light")
-  const toggleTheme = () => {
-    if (theme === "light") {
-      setTheme("dark")
-    } else {
-      setTheme("light")
-    }
-  }
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    })
+  }, [])
 
   return (
-    <div className="layout" style={theme === "light" ? lightTheme : darkTheme}>
+    <div className="layout">
       <div className="layout-content">
-        <Navbar toogleTheme={toggleTheme} />
+        <Navbar />
         <SocialIcons />
         <div className="content">{children}</div>
       </div>
