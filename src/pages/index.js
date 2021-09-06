@@ -8,6 +8,7 @@ import SVG from "../components/SVG"
 import SVGg from "../components/SVGg"
 import ParallaxProjects from "../components/ParallaxProjects"
 import Heading from "../components/Heading"
+import Footer from "../components/Footer"
 
 export default function Home() {
   return (
@@ -89,16 +90,14 @@ export default function Home() {
               </div>
             </div>
           </section>
+
           <section>
-            <div className={styles.project_head}>
-              <Heading text="my projects" />
-            </div>
+            <div></div>
+            <Heading text="my projects" />
 
             <ParallaxProjects />
           </section>
-          <footer>
-            <p>Cpoyright 2021 Tashi Gautam</p>
-          </footer>
+          <Footer />
         </div>
       </div>
     </Layout>
