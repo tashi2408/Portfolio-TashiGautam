@@ -1,0 +1,183 @@
+.error {
+  padding: 2rem 0;
+  height: 100vh;
+  text-align: center;
+  max-width: 80rem;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  & h1 {
+    font-size: 10vh;
+    font-weight: 200;
+  }
+
+  & p {
+    font-weight: 400;
+    font-size: 5vh;
+  }
+}
+.ghost_canvas {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.ghost_body {
+  position: absolute;
+  height: 12rem;
+  width: 12rem;
+  background-color: white;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  /*ANIMATION START*/
+  animation-name: floating;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  /*ANIMATION END*/
+}
+.ghost_body_copy {
+  position: absolute;
+  height: 28%;
+  width: 22%;
+  background-color: white;
+  left: 40%;
+  top: 33%;
+  z-index: 1;
+}
+
+.ghost_head {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: -50%;
+  background-color: white;
+  border-radius: 90px;
+}
+.eye_right {
+  position: absolute;
+  height: 22%;
+  width: 20%;
+  right: 22%;
+  top: 40%;
+  background-color: black;
+  border-radius: 50%;
+}
+.eye_left {
+  position: absolute;
+  height: 22%;
+  width: 20%;
+  left: 22%;
+  top: 40%;
+  background-color: black;
+  border-radius: 50%;
+}
+.mouth {
+  position: absolute;
+  height: 26%;
+  width: 24%;
+  left: 38%;
+  top: 70%;
+  background-color: black;
+  border-radius: 50%;
+  z-index: 2;
+}
+.down_bubble {
+  position: absolute;
+  height: 55%;
+  width: 100%;
+  top: 70%;
+}
+
+.bubble_1 {
+  position: absolute;
+  height: 100%;
+  width: 25%;
+  background-color: white;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  /*ANIMATION START*/
+  animation-name: bubble;
+  animation-duration: 2.8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  /*ANIMATION END*/
+}
+.bubble_2 {
+  position: absolute;
+  height: 100%;
+  width: 25%;
+  left: 25%;
+  background-color: white;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  /*ANIMATION START*/
+  animation-name: bubble;
+  animation-duration: 3.2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  /*ANIMATION END*/
+}
+.bubble_3 {
+  position: absolute;
+  height: 100%;
+  width: 25%;
+  right: 25%;
+  background-color: white;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  /*ANIMATION START*/
+  animation-name: bubble;
+  animation-duration: 3.4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  /*ANIMATION END*/
+}
+.bubble_4 {
+  position: absolute;
+  height: 100%;
+  width: 25%;
+  right: 0;
+  background-color: white;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  /*ANIMATION START*/
+  animation-name: bubble;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  /*ANIMATION END*/
+}
+
+/*ANIMATION START*/
+@keyframes bubble {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 20%;
+  }
+  100% {
+    top: 0;
+  }
+}
+@keyframes floating {
+  0% {
+    top: 33%;
+  }
+  30% {
+    top: 40%;
+  }
+  50% {
+    top: 33%;
+  }
+  70% {
+    top: 25%;
+  }
+  100% {
+    top: 33%;
+  }
+}
