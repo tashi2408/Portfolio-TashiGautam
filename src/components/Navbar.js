@@ -1,4 +1,4 @@
-import { Link } from "gatsby"
+import { Link, graphql, useStaticQuery } from "gatsby"
 import React from "react"
 
 export default function Navbar() {
@@ -20,20 +20,13 @@ export default function Navbar() {
             <Link to="/about">About</Link>
           </li>
           <li>
-            <Link to="/contact">Conatct Me</Link>
+            <Link to="/projects">Projects</Link>
           </li>
           <li>
-            <Link to="/projects">Projects</Link>
+            <Link to="/contact">Conatct Me</Link>
           </li>
         </ul>
       </nav>
     </div>
   )
-}
-
-{
-  /* <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/contact">Conatct Me</Link>
-        <Link to="/projects">Projects</Link> */
 }

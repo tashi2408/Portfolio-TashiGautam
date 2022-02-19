@@ -13,7 +13,6 @@ export default function Projects() {
         <ProjectSlide />
         <ProjectGallery />
       </div>
-      <Footer />
     </Layout>
   )
 }

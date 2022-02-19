@@ -7,21 +7,21 @@ export default function Footer() {
       <div>
         <ul>
           <li>
-            <Link to="/pages/home">Home</Link>
+            <Link to="/">Home</Link>
           </li>
           <li> | </li>
           <li>
-            <Link to="/pages/about">About</Link>
-          </li>
-          <li> | </li>
-
-          <li>
-            <Link to="/pages/projects">Projects</Link>
+            <Link to="/about">About</Link>
           </li>
           <li> | </li>
 
           <li>
-            <Link to="/pages/contact">Contact</Link>
+            <Link to="/projects">Projects</Link>
+          </li>
+          <li> | </li>
+
+          <li>
+            <Link to="/contact">Contact</Link>
           </li>
         </ul>
       </div>

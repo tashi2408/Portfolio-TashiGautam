@@ -46,10 +46,10 @@ export default function ProjectGallery() {
       <div className={styles.container}>
         {projects.map((e, i) => {
           return (
-            <div className={styles.card}>
+            <div className={styles.card} data-aos="fade-right">
               <div className={styles.box}>
                 <div className={styles.content} key={i}>
-                  <h2>{e.id}</h2>
+                  <h2>{e.number}</h2>
                   <h3>{e.title}</h3>
                   <p>{e.info}</p>
                   <Link to={"/projects/meetme"}>Read More</Link>

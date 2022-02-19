@@ -9,17 +9,24 @@ import SVGg from "../components/SVGg"
 import ParallaxProjects from "../components/ParallaxProjects"
 import Heading from "../components/Heading"
 import Footer from "../components/Footer"
+import { graphql } from "gatsby"
 
 export default function Home() {
   return (
-    <Layout className={styles.hide}>
-      <div className={styles.hide}>
+    <Layout>
+      <div
+        style={{
+          width: "100%",
+          height: "100%",
+          overflow: "hidden !important",
+        }}
+      >
         <div className={styles.home}>
           <section className={`${styles.basecontainer} ${styles.group1}`}>
             <div className={`${styles.container} ${styles.container_fore}`}>
               <div className={styles.headtitle}>
-                <h1>Hello!</h1>
-                <h3>Nice to see you here.</h3>
+                <h1 data-aos="zoom-in">Hello!</h1>
+                <h3 data-aos="zoom-in">Nice to see you here.</h3>
               </div>
               <div className={styles.image}>
                 <SVG />
@@ -90,18 +97,13 @@ export default function Home() {
               </div>
             </div>
           </section>
-
-          <section>
-            <div></div>
-            <Heading text="my projects" />
-
-            <ParallaxProjects />
-          </section>
-          <Footer />
         </div>
       </div>
+      <section className={styles.home_project_section}>
+        <Heading text="my projects" />
+
+        <ParallaxProjects />
+      </section>
     </Layout>
   )
 }
-
-/*  */

@@ -74,14 +74,8 @@ body {
 
 footer {
   padding: 4rem 0;
-  color: var(--quaternary);
-  background: rgb(209, 107, 165);
-  background: linear-gradient(
-    180deg,
-    rgba(209, 107, 165, 0.8438725832129726) 0%,
-    rgba(0, 0, 0, 1) 16%,
-    rgba(10, 10, 10, 1) 98%
-  );
+  background-color: rgb(20, 20, 20);
+
   & ul {
     margin-bottom: 2rem;
     display: flex;
