@@ -12,6 +12,7 @@ import Skillbar from "../components/Skillbar"
 
 import SVG from "../components/SVG"
 import SVGg from "../components/SVGg"
+import Resume from "../../static/TashiGautam.pdf"
 
 export default function About() {
   return (
@@ -20,33 +21,39 @@ export default function About() {
         <Heading text="about me" />
         <section className={styles.intro} data-aos="fade-left">
           <div className={styles.intro__left}>
-            <img src="/2.jpg" />
+            <img src="/Tashi.jpg" />
           </div>
           <div className={styles.intro__right}>
             <h1>Tashi Gautam</h1>
             <p>
-              My name is John Smith. I am a web designer and developer.Lorem
-              ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor incididunt ut laboagna aliqua. Quis ipsum suspendisse
-              ultrices gravida. Risus commodo viverra maecenas accumsan lacus
-              vel facilisis.
+              Hello! I'm Tashi Gautam. I'm a third-year undergrad at Ajay Kumar
+              Garg Engineering College pursuing engineering in Computer Science
+              and Information Technology. I am a Web Developer and Machine
+              Learning Enthusiast. I've done work for organizations and startups
+              as an intern and collaborated with talented people to create
+              products for consumer use. I like to code things from scratch and
+              enjoy bringing ideas to life in the browser. Fueled by high energy
+              and boundless enthusiasm, I'm easily inspired and more willing to
+              follow my fascinations where they take me. My curiosity drove me
+              to explore other domains like Competitive coding, Ethical hacking,
+              Data analytics, and UI/UX designing. I'm confident and perpetually
+              working on improving my skills. I genuinely care about people and
+              love helping fellow students. I believe as a web developer, I'd be
+              a great asset to a Web Development team.
             </p>
-            <a
-              className={styles.btn}
-              href="/TashiGautam.pdf"
-              download="TashiGautam.pdf"
-            >
+
+            <a className={styles.btn} href={"TashiGautam.pdf"} download>
               <div className={styles.button}>
-                <input id="button" type="checkbox" />
-                <label for="button">
-                  <div className={styles.button_inner}>
-                    <AiOutlineLogin className={styles.l} />
-                    <span className={styles.t}>My Resume</span>
-                    <span>
-                      <IoCheckmark className={styles.tick} />
-                    </span>
-                  </div>
-                </label>
+                {/* <input id="button" type="checkbox" /> */}
+                {/* <label for="button"> */}
+                <div className={styles.button_inner}>
+                  <AiOutlineLogin className={styles.l} />
+                  <span className={styles.t}>My Resume</span>
+                  <span>
+                    <IoCheckmark className={styles.tick} />
+                  </span>
+                </div>
+                {/* </label> */}
               </div>
             </a>
           </div>

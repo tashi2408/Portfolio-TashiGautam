@@ -8,18 +8,39 @@ export default function SocialIcons() {
   return (
     <div>
       <div className={styles.social_btns}>
-        <Link className={`${styles.btn} ${styles.github}`} href="#">
+        <a
+          href="https://github.com/tashi2408"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={`${styles.btn} ${styles.github}`}
+        >
           <AiFillGithub className={styles.fa} />
-        </Link>
-        <Link className={`${styles.btn} ${styles.instagram}`} href="#">
+        </a>
+
+        <a
+          className={`${styles.btn} ${styles.instagram}`}
+          href="https://www.instagram.com/_tashii_2408/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <AiFillInstagram className={styles.fa} />
-        </Link>
-        <Link className={`${styles.btn} ${styles.google}`} href="#">
+        </a>
+        <a
+          className={`${styles.btn} ${styles.google}`}
+          href="mailto: tashub3@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <AiOutlineGoogle className={styles.fa} />
-        </Link>
-        <Link className={`${styles.btn} ${styles.linkedin}`} href="#">
+        </a>
+        <a
+          className={`${styles.btn} ${styles.linkedin}`}
+          href="https://www.linkedin.com/in/tashi-gautam/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FaLinkedinIn className={styles.fa} />
-        </Link>
+        </a>
       </div>
     </div>
   )

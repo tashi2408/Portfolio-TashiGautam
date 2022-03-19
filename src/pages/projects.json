@@ -5,8 +5,8 @@
     "title": "Meet Me",
     "type": "Web Development",
     "techStack": ["HTML", "SCSS"],
-    "info": "Lorem ipsum dolor  rerum aut nihil iure ut laborum nulla uts ad dolorem earum vel voluptas laborum.",
-    "img": "https://unsplash.it/450/800?image=508"
+    "info": "A website built with HTML displays my interests and hobbies using advanced CSS animations and SCSS",
+    "img": "MeetMe.png"
   },
 
   {
@@ -15,8 +15,8 @@
     "title": "Brainastra",
     "type": "Web Development",
     "techStack": ["ReactJS", "Redux"],
-    "info": " iure ut laborum nulla ut necessitatibus voluptas ad dolorem earum vel voluptas laborum.",
-    "img": "https://unsplash.it/450/800?image=817"
+    "info": "A study platform for students to watch live lectures, with stats of attendance and concentration for instructors and admin.",
+    "img": "2.jpg"
   },
 
   {
@@ -25,8 +25,8 @@
     "title": "Your Friend Website",
     "type": "Web Development",
     "techStack": ["ReactJS"],
-    "info": "consectetur internos eos voluptas rerum aut nihil iure ut laborum nulla ut necessitatibus voluptas ad dolorem earum vel voluptas laborum.",
-    "img": "https://unsplash.it/450/800?image=948"
+    "info": "A landing page for Your Friend Initiative. It is a React website where people can book an appointment with the therapist, and schools can hire them as counselors.",
+    "img": "3.jpg"
   },
 
   {
@@ -35,8 +35,8 @@
     "title": "Music Generation",
     "type": "Deep Learning",
     "techStack": ["CNN", "Python"],
-    "info": "Lorem ipsumnihil iure ut laborum nulla ut necessitatibus voluptas ad dolorem earum vel voluptas laborum.",
-    "img": "https://unsplash.it/450/800?image=743"
+    "info": "A Machine Learning (LSTM) model, utilizing existing music files to generate new music files.",
+    "img": "1.jpg"
   },
 
   {
@@ -45,8 +45,8 @@
     "title": "Twitter Gender Classification",
     "type": "Machine Learning",
     "techStack": ["Python"],
-    "info": "Lorem ipsurerum qui enim laboriocessitatibus voluptas ad dolorem earum vel voluptas laborum.",
-    "img": "https://unsplash.it/450/800?image=452"
+    "info": "It is an Ensemble model that classifies the owner of the tweets as male or female.",
+    "img": "2.jpg"
   },
 
   {
@@ -55,8 +55,8 @@
     "title": "Rob-Oto",
     "type": "Machine Learning",
     "techStack": ["Python"],
-    "info": "Lorem ipsum dolor ut laborum nulla ut necessitatibus voluptas ad dolorem earum vel voluptas laborum.",
-    "img": "https://unsplash.it/450/800?image=737"
+    "info": "It is an Ensemble model that classifies the owner of the tweets as male or female.",
+    "img": "3.jpg"
   },
   {
     "id": 6,
@@ -64,7 +64,34 @@
     "title": "Stract Club Portfolio",
     "type": "Web Development",
     "techStack": ["ReactJS"],
-    "info": "Lorem ipsum doloborum nulla ut necessitatibus voluptas ad dolorem earum vel voluptas laborum.",
-    "img": "https://unsplash.it/450/800?image=807"
+    "info": "A React(Vite) portfolio website.",
+    "img": "Stract.png"
+  },
+  {
+    "id": 7,
+    "number": "08",
+    "title": "Login/Register",
+    "type": "Web Development",
+    "techStack": ["ReactJS"],
+    "info": "React template for login and register page.",
+    "img": "LoginRegister.png"
+  },
+  {
+    "id": 8,
+    "number": "09",
+    "title": "Bookify",
+    "type": "Web Development",
+    "techStack": ["MongoDB", "Express.js", "React.js", "Node.js"],
+    "info": "A MERN stack site for bookworms where they can connect with previous readers of a particular book while staying anonymous.",
+    "img": "Omnifood.png"
+  },
+  {
+    "id": 9,
+    "number": "10",
+    "title": "Scoops&Cones",
+    "type": "Web Development",
+    "techStack": ["Next.js", "MongoDB", "Express.js", "Node.js"],
+    "info": "An e-commerce website for an ice cream shop built using Next.js.",
+    "img": "Omnifood.png"
   }
 ]

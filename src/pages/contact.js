@@ -11,13 +11,20 @@ export default function Contact() {
     <Layout>
       <Heading text="get in touch" />
       <section className={styles.contactsection}>
-        <form data-aos="zoom-in-up">
+        <form
+          data-aos="zoom-in-up"
+          method="post"
+          data-netlify-honeypot="bot-field"
+          data-netlify="true"
+          name="contact"
+        >
           <div class={`${styles.form__group} ${styles.field}`}>
             <input
               type="text"
               class={styles.form__field}
               placeholder="Name"
               name="name"
+              id="name"
             />
             <label for="name" class={styles.form__label}>
               Name
@@ -29,6 +36,7 @@ export default function Contact() {
               class={styles.form__field}
               placeholder="Email"
               name="email"
+              id="email"
             />
             <label for="email" class={styles.form__label}>
               Email
@@ -40,6 +48,7 @@ export default function Contact() {
               class={styles.form__field}
               placeholder="Subject"
               name="subject"
+              id="subject"
             />
             <label for="subject" class={styles.form__label}>
               Subject
@@ -51,6 +60,7 @@ export default function Contact() {
               class={styles.form__field}
               placeholder="Message"
               name="Message"
+              id="message"
             />
             <label for="message" class={styles.form__label}>
               Message
