@@ -18,6 +18,8 @@ export default function Contact() {
           data-netlify="true"
           name="contact"
         >
+          <input type="hidden" name="bot-field" />
+          <input type="hidden" name="form-name" value="contact" />
           <div class={`${styles.form__group} ${styles.field}`}>
             <input
               type="text"
@@ -66,7 +68,6 @@ export default function Contact() {
               Message
             </label>
           </div>
-
           <button>Submit</button>
         </form>
 
