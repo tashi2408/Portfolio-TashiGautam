@@ -14,7 +14,7 @@ export default function Contact() {
         <form
           data-aos="zoom-in-up"
           method="post"
-          data-netlify-honeypot="bot-field"
+          netlify-honeypot="bot-field"
           data-netlify="true"
           name="contact"
         >

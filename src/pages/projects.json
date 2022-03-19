@@ -93,5 +93,14 @@
     "techStack": ["Next.js", "MongoDB", "Express.js", "Node.js"],
     "info": "An e-commerce website for an ice cream shop built using Next.js.",
     "img": "Omnifood.png"
+  },
+  {
+    "id": 9,
+    "number": "10",
+    "title": "Omnifood",
+    "type": "Web Development",
+    "techStack": ["HTML"],
+    "info": "An e-commerce website for an ice cream shop built using Next.js.",
+    "img": "Omnifood.png"
   }
 ]
